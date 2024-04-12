@@ -2,7 +2,16 @@ version: '3'
 
 services:
   build:
-    build: .
+    build:
+      context: .
+      target: build
     volumes:
       - .:/app
-    command: npm run build
+
+  serve:
+    build:
+      context: .
+      target: serve
+      dockerfile:Dockerfile
+    ports:
+      - 80:80
