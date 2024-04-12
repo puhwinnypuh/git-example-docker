@@ -75,3 +75,10 @@ task json
 ```shell
 task skill_by_level -- <level>
 ```
+
+### build
+
+Чтобы собрать образы и запустить службы, выполните следующую команду в терминале:
+```shell
+docker-compose up --build
+```
