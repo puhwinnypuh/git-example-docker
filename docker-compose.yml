@@ -12,6 +12,6 @@ services:
     build:
       context: .
       target: serve
-      dockerfile:Dockerfile
+      dockerfile: Dockerfile
     ports:
       - 80:80
